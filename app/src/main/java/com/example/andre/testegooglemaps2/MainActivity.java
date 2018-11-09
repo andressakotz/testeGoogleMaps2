@@ -254,6 +254,37 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
             option.position(latLng);
             Marker currentMarker = myMap.addMarker(option);
             currentMarker.showInfoWindow();
+            
+                        final LatLng cordGoogleSp = new LatLng(-23.586328, -46.682012);
+            final LatLng cordGoogleSp2 = new LatLng(-28.286328, -54.272012);
+            final LatLng cordGoogleSp3 = new LatLng(-28.296430, -54.262029);
+            final LatLng cordGoogleSp4 = new LatLng(-28.306430, -54.262029);
+
+            myMap.addMarker(new MarkerOptions().position(cordGoogleSp));
+            myMap.addMarker(new MarkerOptions().position(cordGoogleSp2));
+            myMap.addMarker(new MarkerOptions().position(cordGoogleSp3));
+            myMap.addMarker(new MarkerOptions().position(cordGoogleSp4));
+
+            Marker meuMarcadorMarker = myMap.addMarker(new MarkerOptions().position(cordGoogleSp));
+            meuMarcadorMarker.setTitle("Parada...");
+            meuMarcadorMarker.setSnippet("Rua...");
+
+            Marker meuMarcadorMarker2 = myMap.addMarker(new MarkerOptions().position(cordGoogleSp2));
+            meuMarcadorMarker2.setTitle("Parada...");
+            meuMarcadorMarker2.setSnippet("Rua...");
+
+            Marker meuMarcadorMarker3 = myMap.addMarker(new MarkerOptions().position(cordGoogleSp3));
+            meuMarcadorMarker3.setTitle("Parada...");
+            meuMarcadorMarker3.setSnippet("Rua...");
+
+            Marker meuMarcadorMarker4 = myMap.addMarker(new MarkerOptions().position(cordGoogleSp4));
+            meuMarcadorMarker4.setTitle("Parada...");
+            meuMarcadorMarker4.setSnippet("Rua...");
+
+            meuMarcadorMarker.showInfoWindow();
+            meuMarcadorMarker2.showInfoWindow();
+            meuMarcadorMarker3.showInfoWindow();
+            meuMarcadorMarker4.showInfoWindow();
         } else {
             Toast.makeText(this, "Location not found!", Toast.LENGTH_LONG).show();
             Log.i(MYTAG, "Location not found");
