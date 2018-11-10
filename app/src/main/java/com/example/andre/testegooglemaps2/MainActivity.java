@@ -255,36 +255,87 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
             Marker currentMarker = myMap.addMarker(option);
             currentMarker.showInfoWindow();
             
-                        final LatLng cordGoogleSp = new LatLng(-23.586328, -46.682012);
-            final LatLng cordGoogleSp2 = new LatLng(-28.286328, -54.272012);
-            final LatLng cordGoogleSp3 = new LatLng(-28.296430, -54.262029);
-            final LatLng cordGoogleSp4 = new LatLng(-28.306430, -54.262029);
+            final LatLng cordGoogleSp = new LatLng(-28.306047908006647,-54.27588880062103);
+            final LatLng cordGoogleSp2 = new LatLng(-28.30868802112845,-54.278340339660645);
+            final LatLng cordGoogleSp3 = new LatLng(-28.312003419212083,-54.27162945270538);
+            final LatLng cordGoogleSp4 = new LatLng(-28.309731768707906,-54.270320534706116);
+            final LatLng cordGoogleSp5 = new LatLng(-28.280380138904658,-54.251121282577515);
+            final LatLng cordGoogleSp6 = new LatLng(-28.281296614083363,-54.26117420196533);
+            final LatLng cordGoogleSp7 = new LatLng(-28.28946895632456,-54.26069140434265);
+            final LatLng cordGoogleSp8 = new LatLng(-28.30149485775285,-54.272063970565796);
+            final LatLng cordGoogleSp9 = new LatLng(-28.3048293721589,-54.27326023578644);
+            /*final LatLng cordGoogleSp10 = new LatLng(-28.3048293721589,-54.27326023578644);
+            final LatLng cordGoogleSp11 = new LatLng(-28.3048293721589,-54.27326023578644);
+            final LatLng cordGoogleSp12 = new LatLng(-28.3048293721589,-54.27326023578644);
+            final LatLng cordGoogleSp13 = new LatLng(-28.3048293721589,-54.27326023578644);
+            final LatLng cordGoogleSp14 = new LatLng(-28.3048293721589,-54.27326023578644);
+            final LatLng cordGoogleSp15 = new LatLng(-28.3048293721589,-54.27326023578644);
+            final LatLng cordGoogleSp16 = new LatLng(-28.3048293721589,-54.27326023578644);*/
 
             myMap.addMarker(new MarkerOptions().position(cordGoogleSp));
             myMap.addMarker(new MarkerOptions().position(cordGoogleSp2));
             myMap.addMarker(new MarkerOptions().position(cordGoogleSp3));
             myMap.addMarker(new MarkerOptions().position(cordGoogleSp4));
+            myMap.addMarker(new MarkerOptions().position(cordGoogleSp5));
+            myMap.addMarker(new MarkerOptions().position(cordGoogleSp6));
+            myMap.addMarker(new MarkerOptions().position(cordGoogleSp7));
+            myMap.addMarker(new MarkerOptions().position(cordGoogleSp8));
+            myMap.addMarker(new MarkerOptions().position(cordGoogleSp9));
 
             Marker meuMarcadorMarker = myMap.addMarker(new MarkerOptions().position(cordGoogleSp));
-            meuMarcadorMarker.setTitle("Parada...");
-            meuMarcadorMarker.setSnippet("Rua...");
+            meuMarcadorMarker.setTitle("Parada Agropecuária Fogo de Chão");
+            meuMarcadorMarker.setSnippet("Rua Sete Povos das Missões");
 
             Marker meuMarcadorMarker2 = myMap.addMarker(new MarkerOptions().position(cordGoogleSp2));
-            meuMarcadorMarker2.setTitle("Parada...");
-            meuMarcadorMarker2.setSnippet("Rua...");
+            meuMarcadorMarker2.setTitle("Parada Redemaq");
+            meuMarcadorMarker2.setSnippet("Rua São João Batista");
 
             Marker meuMarcadorMarker3 = myMap.addMarker(new MarkerOptions().position(cordGoogleSp3));
-            meuMarcadorMarker3.setTitle("Parada...");
-            meuMarcadorMarker3.setSnippet("Rua...");
+            meuMarcadorMarker3.setTitle("Parada 219");
+            meuMarcadorMarker3.setSnippet("Avenida Rio Grande do Sul");
 
             Marker meuMarcadorMarker4 = myMap.addMarker(new MarkerOptions().position(cordGoogleSp4));
-            meuMarcadorMarker4.setTitle("Parada...");
-            meuMarcadorMarker4.setSnippet("Rua...");
+            meuMarcadorMarker4.setTitle("Parada 603");
+            meuMarcadorMarker4.setSnippet("Rua General Carlos de Campos Gayão");
+
+            Marker meuMarcadorMarker5 = myMap.addMarker(new MarkerOptions().position(cordGoogleSp5));
+            meuMarcadorMarker5.setTitle("Parada 4672");
+            meuMarcadorMarker5.setSnippet("Avenida Salgado Filho");
+
+            Marker meuMarcadorMarker6 = myMap.addMarker(new MarkerOptions().position(cordGoogleSp6));
+            meuMarcadorMarker6.setTitle("Parada Praça do Jayme");
+            meuMarcadorMarker6.setSnippet("Rua Marechal Floriano Peixoto");
+
+            Marker meuMarcadorMarker7 = myMap.addMarker(new MarkerOptions().position(cordGoogleSp7));
+            meuMarcadorMarker7.setTitle("Parada Lancheria Real");
+            meuMarcadorMarker7.setSnippet("Rua Marechal Floriano Peixoto");
+
+            Marker meuMarcadorMarker8 = myMap.addMarker(new MarkerOptions().position(cordGoogleSp8));
+            meuMarcadorMarker8.setTitle("Parada Mercado O Colono");
+            meuMarcadorMarker8.setSnippet("Rua Dez de Novembro");
+
+            Marker meuMarcadorMarker9 = myMap.addMarker(new MarkerOptions().position(cordGoogleSp9));
+            meuMarcadorMarker9.setTitle("Parada Bar do Motorista");
+            meuMarcadorMarker9.setSnippet("Rua General Carlos de Campos Gayão");
+
 
             meuMarcadorMarker.showInfoWindow();
             meuMarcadorMarker2.showInfoWindow();
             meuMarcadorMarker3.showInfoWindow();
             meuMarcadorMarker4.showInfoWindow();
+            meuMarcadorMarker5.showInfoWindow();
+            meuMarcadorMarker6.showInfoWindow();
+            meuMarcadorMarker7.showInfoWindow();
+            meuMarcadorMarker8.showInfoWindow();
+            meuMarcadorMarker9.showInfoWindow();
+            
+        } else {
+            Toast.makeText(this, "Location not found!", Toast.LENGTH_LONG).show();
+            Log.i(MYTAG, "Location not found");
+        }
+
+
+    }
         } else {
             Toast.makeText(this, "Location not found!", Toast.LENGTH_LONG).show();
             Log.i(MYTAG, "Location not found");
